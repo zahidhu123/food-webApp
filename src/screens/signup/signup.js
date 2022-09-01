@@ -9,16 +9,13 @@ export default function Signup() {
         <>
             <div className='login-box'>
                 <div className='container-fluid'>
-                    <div className='row'>
-                        <div className='col-md-6 p-0'>
-                            <img src={Photo} className='login-image' alt="" />
-                        </div>
-                        <div className='col-md-6 d-flex justify-content-center align-items-center p-0 bg-light'>
+                    <div className='row justify-content-center'>
+                        <div className='col-md-4 justify-content-center align-items-center p-0 bg-light'>
                             <div className='login-wrapper'>
                                 <div>
                                     <h1 className='l-heading'>Welcome To Signup</h1>
                                 </div>
-                                <p className='l-ph'>Sign in to contine using kipe</p>
+                                <p className='l-ph'>Sign in to contine using Food App</p>
                                 <div>
                                     <div className='mb-2'>
                                         <label htmlFor="" className='l-label'>Name</label>
@@ -38,13 +35,13 @@ export default function Signup() {
                                     </div>
                                 </div>
                                 <div className='py-3'>
-                                   <NavLink to='/home'> <button className='btn1 btn-primary'>Signup</button></NavLink>
+                                   <NavLink to='/login'> <button className='btn1 btn-primary'>Signup</button></NavLink>
                                 </div>
                                 <div className='d-flex justify-content-between m-0 py-2'>
                                     <div>
                                         <p className='l-account m-0'>Dont have an account?</p>
                                     </div>
-                                    <NavLink to='/login'><p className='l-reg'>Login Here</p></NavLink>
+                                    {/* <NavLink to='/login'><p className='l-reg'>Login Here</p></NavLink> */}
                                 </div>
                             </div>
                         </div>

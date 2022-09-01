@@ -1,0 +1,16 @@
+.welcome-box3{
+    margin: 80px 0px 0px 0px;
+    background-color: white;
+    box-shadow: -2px 3px 1px -1px gainsboro;
+}
+
+.welcome-page1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+}
+.thank{
+    font-size: 20px;
+    font-weight: 400;
+}

@@ -11,3 +11,17 @@
 .card-icon{
     cursor: pointer;
 }
+.card-count{
+    color: #f8f9fa!important;
+    width: 18px;
+    height: 18px;
+    background: #81807e;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
