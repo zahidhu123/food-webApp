@@ -8,8 +8,9 @@
     font-weight: 700;
     color: white !important;
 }
-.card-icon{
+.card-icon {
     cursor: pointer;
+    color: black;
 }
 .card-count{
     color: #f8f9fa!important;

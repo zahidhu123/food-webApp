@@ -40,7 +40,6 @@
 
 .btn1 {
   width: 100%;
-
   justify-content: center;
   background: #3e52b2;
   display: flex;
@@ -87,7 +86,7 @@ a {
 
 .add {
   padding: 0px 15px;
-  background: #3e52b2;
+  background: #303f9f;
   color: white;
   border: none;
 }

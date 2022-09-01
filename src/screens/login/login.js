@@ -3,37 +3,42 @@ import Photo from '../../assets/Photo.jpg'
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
-    
+    const navigate = useNavigate();
+
+
 
     const handleEmail = (e) => {
         setEmail(e.target.value)
     }
 
-    const handlePassword  = (e) => { 
+    const handlePassword = (e) => {
         setPassword(e.target.value)
     }
 
-    const handleApi = () =>{
-        console.log(email,password) 
+    const handleApi = () => {
+        console.log(email, password)
 
 
         axios.post('https://reqres.in/api/login', {
             email: email,
             password: password
         })
-        .then(result =>{
-            console.log(result.data)
-            alert('success')
-        })
-        .catch(error =>{
-            console.log(error)
-        })
+            .then(result => {
+                console.log(result.data)
+                // alert('success')
+
+                navigate('/home')
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 
 
@@ -56,12 +61,12 @@ export default function Login() {
 
                                     <div className='mb-3'>
                                         <label htmlFor="" className='l-label'>Password</label>
-                                        <input type="password" value={password} onChange={handlePassword }                 
-                                        className='form-control' placeholder='Enter Password' />
+                                        <input type="password" value={password} onChange={handlePassword}
+                                            className='form-control' placeholder='Enter Password' />
                                     </div>
                                 </div>
                                 <div className='py-3'>
-                                    <NavLink to="/home"><button className='btn1 btn-primary' onClick={handleApi }>LOGIN</button></NavLink> 
+                                    <button className='btn1 btn-primary' onClick={handleApi}>LOGIN</button>
                                 </div>
                                 <div className='d-flex justify-content-between m-0 py-2'>
                                     <div>
